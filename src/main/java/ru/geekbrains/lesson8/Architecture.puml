@@ -1,9 +1,0 @@
-@startuml
-    package Participants {
-    interface Abstract_Participant
-    class Human implements Abstract_Participant
-    class Cat implements Abstract_Participant
-    class Robot implements Abstract_Participant
-    }
-
-@enduml
