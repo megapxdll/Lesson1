@@ -34,4 +34,28 @@ public class TestMain {
         MainApp app = new MainApp();
         assertEquals(Arrays.asList(-10, -20), app.ArrayFilter(Arrays.asList(2, 222, 45, 51, 23, 4, -10, -20)));
     }
+
+    @Test
+    public void Task2Test1() {
+        MainApp app = new MainApp();
+        assertEquals(true, app.CheckArrayFor1and4(Arrays.asList(1, 1, 1, 4, 4, 1, 4, 4)));
+    }
+
+    @Test
+    public void Task2Test2() {
+        MainApp app = new MainApp();
+        assertEquals(false, app.CheckArrayFor1and4(Arrays.asList(1, 1, 1, 1, 1, 1)));
+    }
+
+    @Test
+    public void Task2Test3() {
+        MainApp app = new MainApp();
+        assertEquals(false, app.CheckArrayFor1and4(Arrays.asList(4, 4, 4, 4)));
+    }
+
+    @Test
+    public void Task2Test4() {
+        MainApp app = new MainApp();
+        assertEquals(false, app.CheckArrayFor1and4(Arrays.asList(1, 4, 4, 1, 1, 4, 3)));
+    }
 }

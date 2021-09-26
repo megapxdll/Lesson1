@@ -13,6 +13,7 @@ public class MainApp {
         ArrayFilter(array);
     }*/
 
+    //Task 1
     public List ArrayFilter(List<Integer> arr) {
             Check4inArray(arr);
             List<Integer> new_arr = new ArrayList<>();
@@ -34,5 +35,22 @@ public class MainApp {
             if(!arr.contains(4)) {
                 throw new RuntimeException("Array does not contains number 4");
             }
+    }
+
+    //Task 2
+    public boolean CheckArrayFor1and4 (List<Integer> a) {
+        boolean flag = true;
+        if (!a.contains(4) || !a.contains(1)) {
+            flag = false;
+        }
+        for (int i = 0; i < a.size(); i++) {
+            if(a.get(i) == 4  || a.get(i) == 1) {
+                continue;
+            }
+            else {
+                flag = false;
+            }
+        }
+        return flag;
     }
 }
